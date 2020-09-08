@@ -1,0 +1,12 @@
+@import "src/styles.scss";
+
+.article-image {
+    height: 300px;
+    width: 500px;
+}
+
+.news-content {
+    color: black;
+    background-color: $color-columbia-blue;
+    border-radius: 15px 50px 30px 5px;
+}

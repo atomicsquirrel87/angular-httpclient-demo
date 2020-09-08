@@ -1,0 +1,17 @@
+<h1>Top News</h1>
+<div class="container">
+    <div *ngFor="let article of articles">
+        <div class="row mt-5">
+            <div class="col-sm">
+                <img class="img-thumbnail article-image" src="{{ article.urlToImage }}">
+            </div>
+            <div class="col-sm news-content">
+                <p class="pt-2"><b>{{ article.source.name }}</b></p>
+                <h2>
+                    <a href="{{ article.url }}">{{ article.title }}</a>
+                </h2>
+                <p>{{ article.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
